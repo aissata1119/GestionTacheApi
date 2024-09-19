@@ -1,19 +1,20 @@
-# API REST FORUM
+# API GESTION DE TACHES 
 
 ## DESCRIPTION
-API REST FORUM est un projet qui consiste à développer une API REST pour la gestion d'un forum en utilisant le framework Django.
- L'exercice est divisé en deux étapes pour permettre une approche progressive.
+API GESTION DE TACHES  est un projet qui consiste à développer une API REST pour la gestion des tâches  en utilisant le framework Django.
+ L'exercice est divisé en trois étapes pour permettre une approche progressive.
 
  ## PREREQUIS
  
  **Python 3.12**,
  **Un editeur de code**,
-  **PostgreSQL** et
-  **Postman**
+  **PostgreSQL** 
+  **Postman** et
+ ** Django==5.x ou superieur**
 
  ## Installation
 **1.Cloner le repository et ouvrez le dossier**
-Cloner le repository dans un dossier souhaité avec la commande **git clone https://github.com/racine04/api_rest_forum.git** et ouvrez le dossier avec la commande **cd api_rest_forum**
+Cloner le repository dans un dossier souhaité avec la commande ** git clone https://github.com/PaulEkra/GestionTacheApi.git** et ouvrez le dossier avec la commande **cd GestionTacheApi**
 
 **2.Créer un environnement virtuelle**
 
@@ -23,7 +24,7 @@ Cloner le repository dans un dossier souhaité avec la commande **git clone http
 
 **5. Entrez dans le dossier src avec la commande cd src**
 
-**6. Créez votre bd nommée api_rest_forum_bd dans PostgreSQL et remplacez vos infos de connexion par ceux qui sont dans la section DATABASES du setting.py**
+**6. Créez votre bd nommée tache_db dans PostgreSQL et remplacez vos infos de connexion par ceux qui sont dans la section DATABASES du setting.py**
 
 **7. Lancez votre serveur avec la commande python manage.py runserver**
 
@@ -55,7 +56,24 @@ Gestion de projet
 
  Suppression d'une tâche
 
- Modification d'un projet 
+ Modification d'un projet
+ 
+
+  Gestion de membres
+
+ Création d'un nouveau membre
+
+ Liste des membres
+
+ Récupération des détails d'un membre 
+
+ Suppression d'un membre
+
+ Modification d'un membre
+
+
+
+
 
 
 ## DOCUMENTATION
