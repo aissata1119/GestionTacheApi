@@ -1,7 +1,7 @@
 # API REST FORUM
 
 ## DESCRIPTION
-API REST FORUM est un projet qui consiste à développer une API REST pour la gestion d'un forum en utilisant le framework Django.
+API  est un projet qui consiste à développer une API REST pour la gestion d'un forum en utilisant le framework Django.
  L'exercice est divisé en deux étapes pour permettre une approche progressive.
 
  ## PREREQUIS
