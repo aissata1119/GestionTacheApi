@@ -5,7 +5,6 @@ from project.serializers.task_serializer import TaskSerializer
 
 
 class ProjectSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = ProjectModel
         fields = '__all__'
@@ -17,4 +16,4 @@ class ProjectTaskSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ProjectModel
-        fields = ['task']
+        fields = ['id', 'name', 'task']

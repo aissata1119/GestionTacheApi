@@ -6,12 +6,16 @@ class TeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = TeamModel
         fields = '__all__'
-        read_only_fields = ['id', 'status', 'created_at', 'update_at']
+        read_only_fields = ['id', 'status', 'created_at', 'updated_at']
 
 
 class TeamMemberSerializer(serializers.ModelSerializer):
-    team_member = serializers.StringRelatedField(many=True, read_only=True, source='members')
+    members = serializers.SlugRelatedField(
+        read_only=True,
+        slug_field='name',
+        many=True,
+    )
 
     class Meta:
         model = TeamModel
-        fields = ['team_member']
+        fields = ['id', 'name', 'members']

@@ -22,7 +22,7 @@ from project.viewsets.task_viewset import TaskViewSet
 from team.viewsets.team_viewset import TeamViewSet
 from team.viewsets.member_viewset import MemberViewSet
 from project.viewsets.summons_viewset import SummonsViewSet
-
+from history.views import Notification
 
 
 router = routers.DefaultRouter()
@@ -31,7 +31,7 @@ router.register(r'task', TaskViewSet)
 router.register(r'team', TeamViewSet)
 router.register(r'member', MemberViewSet)
 router.register(r'summons', SummonsViewSet)
-
+router.register(r'notifications', Notification)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
